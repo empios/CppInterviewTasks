@@ -1,13 +1,10 @@
-#include <iostream>
 #include <string>
 
 using std::string;
 using namespace std;
 
 
-
-
-string countLetter(string input){
+void countLetter(string input){
     int length = input.length();
     int counter = 1;
 
@@ -24,15 +21,7 @@ string countLetter(string input){
                 input[j] = 0;
             }
         }
-        printf("\n %c Występuje : %d razy",input[i],counter);
+        printf("\n %c Występuje : %d razy \n",input[i],counter);
         counter=1;
     }
-
-    return 0;
-
-    
-}
-
-int main(){
-    countLetter("Hhejo");
 }
